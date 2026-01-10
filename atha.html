@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Cinta Hidupku ❤️</title>
+    <link rel="stylesheet" href="atha.css">
+</head>
+<body>
+    <!-- Floating Hearts -->
+    <div class="hearts-background" id="heartsBackground"></div>
+
+    <!-- Stars -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <button class="music-btn" id="musicBtn" onclick="toggleMusic()">▶️</button>
+        <div class="music-info">
+            <div style="font-weight: bold;">Our Song</div>
+            <div style="font-size: 12px;">Click to play</div>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop>
+        <source src="One Direction - 18 (Audio) - OneDirectionVEVO (youtube).mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <div class="header">
+            <h1>Untuk Cinta Hidupku ❤️</h1>
+            <p>Kamu adalah alasan aku tersenyum setiap hari</p>
+        </div>
+
+        <div class="heart-container">
+            <div class="main-heart">💖</div>
+        </div>
+
+        <div class="card">
+            <h2>Tentang Kita 💕</h2>
+            <p>
+                Setiap detik bersamamu adalah momen yang tak terlupakan. 
+                Kamu bukan hanya pasanganku, tapi juga sahabat terbaik, 
+                motivator, dan alasan kenapa aku percaya pada cinta sejati. 
+                Terima kasih telah menjadi bagian terpenting dalam hidupku.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>album kamu 📸</h2>
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="WhatsApp Image 2026-01-09 at 20.45.09.jpeg">
+                    <div class="gallery-overlay">
+                        <p>cantik banget 💑</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="WhatsApp Image 2026-01-10 at 21.31.54 (1).jpeg" alt="Moment 2">
+                    <div class="gallery-overlay">
+                        <p>imut 😄</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="WhatsApp Image 2026-01-10 at 21.31.54.jpeg" alt="Moment 3">
+                    <div class="gallery-overlay">
+                        <p>kaye bidadari 🌴</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="WhatsApp Image 2026-01-10 at 22.26.22.jpeg" alt="Moment 4">
+                    <div class="gallery-overlay">
+                        <p>so sweet ✨</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="WhatsApp Image 2026-01-10 at 22.27.18.jpeg" alt="Moment 5">
+                    <div class="gallery-overlay">
+                        <p>milik ku 🎉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-box">
+            Dari sekian banyak orang yang pernah aku temui, 
+            kamu adalah yang paling istimewa. Bukan karena kamu sempurna, 
+            tapi karena bersamamu aku merasa sempurna.
+        </div>
+
+        <div class="card">
+            <h2>impian masa depan ku 🌟</h2>
+            <div class="memory-grid">
+                <div class="memory-item">
+                    <div class="emoji">💫</div>
+                    <p>bertemu kamu</p>
+                </div>
+                <div class="memory-item">
+                    <div class="emoji">💝</div>
+                    <p>minta restu</p>
+                </div>
+                <div class="memory-item">
+                    <div class="emoji">🌹</div>
+                    <p>tunangan</p>
+                </div>
+                <div class="memory-item">
+                    <div class="emoji">✨</div>
+                    <p>kencan</p>
+                </div>
+                <div class="memory-item">
+                    <div class="emoji">🎁</div>
+                    <p>nikah</p>
+                </div>
+                <div class="memory-item">
+                    <div class="emoji">🌈</div>
+                    <p>punya anak</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Janji Cintaku 💍</h2>
+            <p>
+                Aku berjanji akan selalu setia, selalu ada di sampingmu 
+                dalam keadaan apapun. Akan menjaga cinta ini dengan sepenuh hati, 
+                menghargai setiap detik bersama, dan membuatmu bahagia selamanya. 
+                Karena kamu adalah segalanya bagiku.
+            </p>
+        </div>
+
+        <div class="button-container">
+            <a href="#" class="button" onclick="showLoveMessage(); return false;">Pesan Untukmu 💌</a>
+        </div>
+
+        <div class="footer">
+            <p>❤️ Made with Love ❤️</p>
+            <p>Untuk orang yang paling kusayangi di dunia ini</p>
+            <p>I Love You to the Moon and Back 🌙✨</p>
+        </div>
+    </div>
+
+    <!-- Modal untuk foto -->
+    <div id="photoModal" class="modal" onclick="closeModal()">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="Photo">
+        </div>
+    </div>
+
+    <script src="atha.js"></script>
+</body>
+</html>
