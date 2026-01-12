@@ -48,11 +48,10 @@ setInterval(() => {
 // Show Love Message Function
 function showLoveMessage() {
     const messages = [
-        '💕 Aku mencintaimu lebih dari apapun di dunia ini! 💕',
-        '💖 Kamu adalah segalanya bagiku! 💖',
-        '💝 Terima kasih sudah menjadi bagian dari hidupku! 💝',
-        '💗 Aku sangat beruntung memilikimu! 💗',
-        '❤️ Setiap hari bersamamu adalah berkah! ❤️'
+        '💖 Terimakasih sudah datang didalam hidupku caaa 💖',
+        '💝 Kamu mengubah abu-abu menjadi pelangi dalam hidupku 💝',
+        '💗 Aku nyaman menjadi diriku sendiri saat bersamamu, tanpa perlu berpura-pura 💗',
+        '❤️ Aku sayang kamu hari ini, besok dan seterusnya caaaa ❤️'
     ];
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
     alert(randomMessage);
